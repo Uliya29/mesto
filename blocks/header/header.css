@@ -1,0 +1,7 @@
+.header {
+  max-height: 74px;
+  height: 100%;
+  width: 100%;
+
+  border-bottom: 1px rgba(#545454, .7);
+}
