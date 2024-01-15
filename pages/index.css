@@ -17,3 +17,11 @@
 @import url(../blocks/profile/__edit-button/profile__edit-button.css);
 @import url(../blocks/profile/__user-description/profile__user-description.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
+
+/* GRID-GALLERY */
+@import url(../blocks/grid-gallery/grid-gallery.css);
+@import url(../blocks/grid-gallery/__card/grid-gallery__card.css);
+@import url(../blocks/grid-gallery/__photo/grid-gallery__photo.css);
+@import url(../blocks/grid-gallery/__container/grid-gallery__container.css);
+@import url(../blocks/grid-gallery/__title-card/grid-gallery__title-card.css);
+@import url(../blocks/grid-gallery/__like/grid-gallery__like.css);
