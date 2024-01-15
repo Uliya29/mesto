@@ -1,0 +1,5 @@
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 282px));
+  grid-template-rows: minmax(0, 361px);
+}
