@@ -1,0 +1,10 @@
+.profile__user-name {
+  font-family: 'Inter';
+  color: #fff;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 114.286% */
+
+  margin: 0;
+}

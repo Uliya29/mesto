@@ -1,0 +1,8 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: start;
+
+  margin: 39.25px 0 47.25px;
+}
