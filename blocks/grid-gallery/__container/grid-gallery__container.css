@@ -1,0 +1,9 @@
+.grid-gallery__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
+
+  padding: 0 21px;
+  margin-top: 25px;
+}
