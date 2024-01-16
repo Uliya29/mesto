@@ -3,6 +3,7 @@
 
 /* PAGE */
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__button/page__button.css);
 
 /* HEADER */
 @import url(../blocks/header/header.css);
