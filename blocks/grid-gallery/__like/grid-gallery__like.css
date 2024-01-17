@@ -10,3 +10,7 @@
   box-shadow: none;
   padding: 0;
 }
+
+.grid-gallery__like:active {
+  background-image: url(../../../images/like-active.png);
+}
