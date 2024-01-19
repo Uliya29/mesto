@@ -1,0 +1,5 @@
+.body_no-scroll {
+  height: 100vw;
+  overflow: hidden;
+  padding-right: 15px;
+}

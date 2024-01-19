@@ -1,8 +1,14 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 
+/* BODY */
+@import url(../blocks/body/body.css);
+@import url(../blocks/body/_no-scroll/body_no-scroll.css);
+@import url(../blocks/body/__page/body__page.css);
+
 /* PAGE */
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__profile/page__profile.css);
 @import url(../blocks/page/__button/page__button.css);
 @import url(../blocks/page/__input/page__input.css);
 @import url(../blocks/page/__footer/page__footer.css);
