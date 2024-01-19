@@ -3,7 +3,7 @@ let profile = body.querySelector('.profile');
 let popup = body.querySelector('.popup');
 
 let editButton = profile.querySelector('.profile__edit-button');
-let closeButton = popup.querySelector('.popup__close-button')
+let closeButton = popup.querySelector('.popup__close-button');
 
 function openPopup () {
   popup.classList.add('popup_opened');
