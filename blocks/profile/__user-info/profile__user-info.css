@@ -1,0 +1,18 @@
+.profile__user-info {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin: 10px 0 0;
+}
+
+@media screen and (max-width: 690px) {
+  .profile__user-info {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  }
+}

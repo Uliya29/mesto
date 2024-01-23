@@ -4,3 +4,8 @@
   align-items: center;
   justify-items: start;
 }
+@media screen and (max-width: 690px) {
+  .profile {
+    flex-direction: column;
+  }
+}

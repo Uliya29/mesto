@@ -20,11 +20,10 @@
 /* PROFILE */
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__user-avatar/profile__user-avatar.css);
-@import url(../blocks/profile/__user-info/profile__user-info.css);
 @import url(../blocks/profile/__container/profile__container.css);
 @import url(../blocks/profile/__user-name/profile__user-name.css);
 @import url(../blocks/profile/__edit-button/profile__edit-button.css);
-@import url(../blocks/profile/__user-description/profile__user-description.css);
+@import url(../blocks/profile/__user-info/profile__user-info.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 
 /* POPUP */

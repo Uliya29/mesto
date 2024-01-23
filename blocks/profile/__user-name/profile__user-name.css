@@ -8,3 +8,11 @@
 
   margin: 0;
 }
+
+@media screen and (max-width: 690px) {
+  .profile__user-name {
+  text-align: center;
+  font-size: 27px;
+  padding-left: 27px;
+  }
+}
