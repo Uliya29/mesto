@@ -8,7 +8,11 @@ let editButton = profile.querySelector('.profile__edit-button');
 let closeButton = popup.querySelector('.popup__close-button');
 
 let nameProfile = profile.querySelector('.profile__user-name');
-let infoProfile = profile.querySelector('.profile__user-description');
+let infoProfile = profile.querySelector('.profile__user-info');
+
+  //Поля формы
+  let nameInput = popup.querySelector('.popup__user-name');
+  let infoInput = popup.querySelector('.popup__user-info');
 
 function fillInTheFields () {
   nameInput.value = nameProfile.textContent;
@@ -30,10 +34,6 @@ function closePopup () {
 //Обработчик отправки формы (пока никуда не отправляется)
 function formSubmitHandler (evt) {
   evt.preventDefault();//Отменяет стандартную отправку формы
-  //Поля формы
-  let nameInput = popup.querySelector('.popup__user-name');
-  let infoInput = popup.querySelector('.popup__user-info');
-
   //Записывает значения полей ввода в элементы на странице
   nameProfile.textContent = nameInput.value;
   infoProfile.textContent = infoInput.value;
