@@ -1,7 +1,7 @@
 let body = document.querySelector('.body')
 let profile = body.querySelector('.profile');
 let popup = body.querySelector('.popup');
-let formElement = popup.querySelector('.popup-container')
+let formElement = popup.querySelector('.popup__container')
 
 //Кнопки открытия и закрытия поп-апа
 let editButton = profile.querySelector('.profile__edit-button');
@@ -30,13 +30,14 @@ function closePopup () {
   popup.classList.remove('popup_opened');
   body.classList.remove('body_no-scroll')
 }
-
+//Функция для сохранения данных введённых в форму
 //Обработчик отправки формы (пока никуда не отправляется)
 function formSubmitHandler (evt) {
   evt.preventDefault();//Отменяет стандартную отправку формы
   //Записывает значения полей ввода в элементы на странице
   nameProfile.textContent = nameInput.value;
   infoProfile.textContent = infoInput.value;
+  closePopup ();
 }
 
 editButton.addEventListener('click', openPopup);//Обработчик запускает ф-ю при клике по кнопке редактирования профиля
