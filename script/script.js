@@ -1,18 +1,20 @@
-let body = document.querySelector('.body')
-let profile = body.querySelector('.profile');
-let popup = body.querySelector('.popup');
-let formElement = popup.querySelector('.popup__container')
+const body = document.querySelector('.body')
+const profile = body.querySelector('.profile');
+const popup = body.querySelector('.popup');
+const formElement = popup.querySelector('.popup__container')
 
 //Кнопки открытия и закрытия поп-апа
-let editButton = profile.querySelector('.profile__edit-button');
-let closeButton = popup.querySelector('.popup__close-button');
+const editButton = profile.querySelector('.profile__edit-button');
+const closeButton = popup.querySelector('.popup__close-button');
 
-let nameProfile = profile.querySelector('.profile__user-name');
-let infoProfile = profile.querySelector('.profile__user-info');
+const nameProfile = profile.querySelector('.profile__user-name');
+const infoProfile = profile.querySelector('.profile__user-info');
 
-  //Поля формы
-  let nameInput = popup.querySelector('.popup__user-name');
-  let infoInput = popup.querySelector('.popup__user-info');
+//Поля формы
+const nameInput = popup.querySelector('.popup__user-name');
+const infoInput = popup.querySelector('.popup__user-info');
+
+const saveFormButton = popup.querySelector('.popup__save-button')
 
 function fillInTheFields () {
   nameInput.value = nameProfile.textContent;
@@ -28,7 +30,7 @@ function openPopup () {
 //Функция для закрытия поп-апа удаляет присвоенные классы
 function closePopup () {
   popup.classList.remove('popup_opened');
-  body.classList.remove('body_no-scroll')
+  body.classList.remove('body_no-scroll');
 }
 //Функция для сохранения данных введённых в форму
 //Обработчик отправки формы (пока никуда не отправляется)
@@ -41,5 +43,5 @@ function formSubmitHandler (evt) {
 }
 
 editButton.addEventListener('click', openPopup);//Обработчик запускает ф-ю при клике по кнопке редактирования профиля
-formElement.addEventListener('submit', formSubmitHandler);//Обработчик запускает ф-ю при отправке формы
 closeButton.addEventListener('click', closePopup);//Обработчик запускает ф-ю при клике по крестику
+formElement.addEventListener('submit', formSubmitHandler);//Обработчик запускает ф-ю при отправке формы

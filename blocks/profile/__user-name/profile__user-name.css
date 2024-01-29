@@ -1,4 +1,6 @@
 .profile__user-name {
+  max-width: 480px;
+
   font-family: 'Inter';
   color: #fff;
   font-size: 42px;
@@ -6,13 +8,29 @@
   font-weight: 500;
   line-height: 48px; /* 114.286% */
 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
   margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .profile__user-name {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile__user-name {
+    max-width: 43vw;
+  }
 }
 
 @media screen and (max-width: 690px) {
   .profile__user-name {
-  text-align: center;
-  font-size: 27px;
-  padding-left: 27px;
+    font-size: 27px;
+    padding-left: 27px;
+    max-width: 70vw;
   }
 }

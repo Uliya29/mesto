@@ -1,4 +1,7 @@
 .profile__edit-button {
+  display: flex;
+  align-items: baseline;
+
   width: 24px;
   height: 24px;
 

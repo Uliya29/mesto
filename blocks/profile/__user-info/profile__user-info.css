@@ -1,4 +1,6 @@
 .profile__user-info {
+  max-width: 500px;
+
   color: #fff;
   font-family: Inter;
   font-size: 18px;
@@ -6,13 +8,29 @@
   font-weight: 400;
   line-height: normal;
 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
   margin: 10px 0 0;
+}
+
+@media screen and (max-width: 920px) {
+  .profile__user-info {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile__user-info {
+    max-width: 43vw;
+  }
 }
 
 @media screen and (max-width: 690px) {
   .profile__user-info {
-  text-align: center;
-  font-size: 14px;
-  margin: 0;
+    font-size: 14px;
+    margin: 0;
+    max-width: 70vw;
   }
 }

@@ -16,73 +16,73 @@
 
       <main>
   <!-- PROFILE -->
-        <section class="profile page__profile">
-          <img class="profile__user-avatar" src="./images/user-avatar.jpg" alt="Аватар пользователя">
+        <section class="profile page__profile" aria-label="Профиль пользователя">
+          <img class="profile__user-avatar" src="./images/user-avatar.jpg" alt="Фото пользователя">
           <div class="profile__user">
             <div class="profile__container">
               <h1 class="profile__user-name">Жак-Ив Кусто</h1>
-              <button class="profile__edit-button page__button"></button>
+              <button class="profile__edit-button page__button" aria-haspopup="true" title="Редактировать профиль"><span class="sr-only">Редактировать профиль</span></button>
             </div>
               <p class="profile__user-info">Исследователь океана</p>
           </div>
-          <button class="profile__add-button page__button"></button>
-        </section>
+            <button class="profile__add-button page__button" title="Добавить место"><span class="sr-only" title="Добавить место">Добавить место</span></button>
+          </section>
       
   <!-- POPUP -->
-        <section class="popup">
+        <section class="popup" aria-labelledby="popup__title">
           <form class="popup__container">
-            <h2 class="popup__title">Редактировать профиль</h2>
-            <button class="popup__close-button page__button"></button>
+            <h2 class="popup__title" id="popup__title" title="Редактировать профиль">Редактировать профиль</h2>
+            <button class="popup__close-button page__button" type="button"><span class="sr-only">Отменить редактирование профиля</span></button>
             <fieldset class="popup__input-container">
-              <input class="popup__user-name page__input" type="text" name="name">
-              <input class="popup__user-info page__input" type="text" name="info">
+              <input class="popup__user-name page__input" type="text" name="name" placeholder="Имя пользователя">
+              <input class="popup__user-info page__input" type="text" name="info" placeholder="Информация о пользователе">
             </fieldset>
-            <input type="submit" class="popup__save-button" value="Сохранить">
+            <button class="popup__save-button">Сохранить</button>
           </form>
         </section>
 
   <!-- GRID-GALLERY -->
-        <section class="grid-gallery">
+        <section class="grid-gallery" aria-label="Галерея">
           <div class="grid-gallery__card">
             <img class="grid-gallery__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
             <div class="grid-gallery__container"> 
               <h2 class="grid-gallery__title-card">Карачаевск</h2>
-              <button class="grid-gallery__like page__button"></button>
+              <button class="grid-gallery__like page__button"><span class="sr-only">Мне нравится</span></button>
             </div>
           </div>
           <div class="grid-gallery__card">
             <img class="grid-gallery__photo" src="./images/elbrus.png" alt="Гора Эльбрус">
             <div class="grid-gallery__container"> 
               <h2 class="grid-gallery__title-card">Гора Эльбрус</h2>
-              <button class="grid-gallery__like page__button"></button>
+              <button class="grid-gallery__like page__button"><span class="sr-only">Мне нравится</span></button>
             </div>
           </div>
           <div class="grid-gallery__card">
             <img class="grid-gallery__photo" src="./images/dombai.png" alt="Домбай">
             <div class="grid-gallery__container"> 
               <h2 class="grid-gallery__title-card">Домбай</h2>
-              <button class="grid-gallery__like page__button"></button>
+              <button class="grid-gallery__like page__button"><span class="sr-only">Мне нравится</span></button>
             </div>
           </div>
           <div class="grid-gallery__card">
             <img class="grid-gallery__photo" src="./images/elbrus.png " alt="Гора Эльбрус">
             <div class="grid-gallery__container"> 
               <h2 class="grid-gallery__title-card">Гора Эльбрус</h2>
-              <button class="grid-gallery__like page__button"></button>
+              <button class="grid-gallery__like page__button"><span class="sr-only">Мне нравится</span></button>
             </div>
           </div>
           <div class="grid-gallery__card">
             <img class="grid-gallery__photo" src="./images/dombai.png" alt="Домбай">
             <div class="grid-gallery__container"> 
               <h2 class="grid-gallery__title-card">Домбай</h2>
-              <button class="grid-gallery__like page__button"></button>
+              <button class="grid-gallery__like page__button"><span class="sr-only">Мне нравится</span></button>
             </div>
           </div>
           <div class="grid-gallery__card">
             <img class="grid-gallery__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
             <div class="grid-gallery__container"> 
               <h2 class="grid-gallery__title-card">Карачаево-Черкизово</h2>
-              <button class="grid-gallery__like page__button"></button>
+              <button class="grid-gallery__like page__button"><span class="sr-only">Мне нравится</span></button>
             </div>
           </div>
         </section>
