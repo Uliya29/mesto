@@ -1,12 +1,12 @@
-const body = document.querySelector('.body')
-const profile = body.querySelector('.profile');
-const popup = body.querySelector('.popup');
-const formElement = popup.querySelector('.popup__container')
+const profile = document.querySelector('.profile');
+const popup = document.querySelector('.popup');
+const formElement = popup.querySelector('.popup__container');
 
 //Кнопки открытия и закрытия поп-апа
 const editButton = profile.querySelector('.profile__edit-button');
 const closeButton = popup.querySelector('.popup__close-button');
 
+//Информация о пользователе
 const nameProfile = profile.querySelector('.profile__user-name');
 const infoProfile = profile.querySelector('.profile__user-info');
 
@@ -14,7 +14,7 @@ const infoProfile = profile.querySelector('.profile__user-info');
 const nameInput = popup.querySelector('.popup__user-name');
 const infoInput = popup.querySelector('.popup__user-info');
 
-const saveFormButton = popup.querySelector('.popup__save-button')
+const saveFormButton = popup.querySelector('.popup__save-button');
 
 function fillInTheFields () {
   nameInput.value = nameProfile.textContent;
