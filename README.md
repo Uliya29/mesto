@@ -11,5 +11,5 @@
   <li>JavaScript</li>
 </ul>
 <br>
-<h2>Ссылка на сайт:</h2>
+<h2 text-decoration="none">Ссылка на сайт:</h2>
 https://uliya29.github.io/mesto/
